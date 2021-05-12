@@ -17,12 +17,12 @@ while principal > 0:
         remain = principal - total_paid
         month = month + 1
         if remain >= 0:
-            print(month, " ", round(total_paid, 2), " ", round(remain, 2))
+            print(f'At the {month} month: paied: {total_paid:0.2f} remain: {remain:0.2f}')
     principal = principal * (1+rate/12) - payment
     total_paid = total_paid + payment 
     remain = principal - total_paid
     month = month + 1
     if remain >= 0:
-        print(month, " ", round(total_paid, 2), " ", round(remain, 2))
+        print(f'At the {month} month: paied: {total_paid:0.2f} remain: {remain:0.2f}')
 print('Tatal paid', round(total_paid, 2))
 print('Tatal month', month)
